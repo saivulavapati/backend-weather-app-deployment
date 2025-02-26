@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: weather-service
+  config:
+    import: "optional:configserver:${CONFIG_SERVER_URL:http://localhost:8181}"
+
+openweather:
+  api:
+    key: ${OPEN_API_KEY}
+
+
+
+
+
+
