@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: api-gateway
+  jwt:
+    jwtCookieName: ${JWT_COOKIE_NAME:d05fa4badc91955cd239184b42c1b6f72d2a2f6798798354c0609f876923f41d}
+    secretKey: ${JWT_SECRETKEY:weather-jwt-cookie}
+  config:
+    import: "optional:configserver:${CONFIG_SERVER_URL:http://localhost:8181}"
+
+frontend:
+  url: ${FRONTEND_URL:http://localhost:3000}
+
+
