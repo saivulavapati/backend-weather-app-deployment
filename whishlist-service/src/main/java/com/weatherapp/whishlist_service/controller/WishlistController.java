@@ -36,10 +36,6 @@ public class WishlistController {
     public ResponseEntity<Set<City>> getWishlist(
             @RequestHeader("Authenticated-Email") String email) {
         Set<City> userWishlist = wishlistService.getUserWishlist(email);
-        if(userWishlist == null){
-            Set<City> wishList = new HashSet<>();
-            return ResponseEntity.ok(wishList);
-        }
         return ResponseEntity.ok(userWishlist);
     }
 
