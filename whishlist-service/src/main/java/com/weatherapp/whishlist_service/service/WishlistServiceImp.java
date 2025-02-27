@@ -9,6 +9,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.Optional;
 import java.util.Set;
@@ -47,13 +48,9 @@ public class WishlistServiceImp implements WishlistService {
 
     @Override
     public Set<City> getUserWishlist(String email) {
-        Optional<Wishlist> optionalWishlist = wishlistRepository.findByEmail(email);
-        if(optionalWishlist.isPresent()){
-            Wishlist wishlist = optionalWishlist.get();
-            return wishlist.getCities();
-        }else{
-            return null;
-        }
+        return wishlistRepository.findByEmail(email)
+                .map(Wishlist::getCities)
+                .orElse(Collections.emptySet());
     }
 
     @Override

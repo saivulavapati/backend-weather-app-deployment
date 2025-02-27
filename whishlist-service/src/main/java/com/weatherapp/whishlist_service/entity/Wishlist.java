@@ -33,4 +33,5 @@ public class Wishlist {
     public int hashCode() {
         return email != null ? email.hashCode() : 0;
     }
+
 }

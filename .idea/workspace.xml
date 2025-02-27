@@ -5,24 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb65f517-52d7-4c24-b9cb-9aab631bd574" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/backend.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/capstone-project.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/user_profile_0_0_1_SNAPSHOT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-profile/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-profile/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/weather-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whishlist-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/whishlist-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whishlist-service/src/main/java/com/weatherapp/whishlist_service/controller/WishlistController.java" beforeDir="false" afterPath="$PROJECT_DIR$/whishlist-service/src/main/java/com/weatherapp/whishlist_service/controller/WishlistController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whishlist-service/src/main/java/com/weatherapp/whishlist_service/entity/Wishlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/whishlist-service/src/main/java/com/weatherapp/whishlist_service/entity/Wishlist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whishlist-service/src/main/java/com/weatherapp/whishlist_service/service/WishlistServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/whishlist-service/src/main/java/com/weatherapp/whishlist_service/service/WishlistServiceImp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -30,9 +29,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2tZGTU5Lx3SwUwKxAP6YhOZP4Fr" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -46,7 +45,7 @@
     "Application.ConfigServerApplication.executor": "Run",
     "Application.ServiceRegistryApplication.executor": "Run",
     "Application.UserProfileApplication.executor": "Run",
-    "Application.WeatherServiceApplication.executor": "Coverage",
+    "Application.WeatherServiceApplication.executor": "Run",
     "Application.WhishlistServiceApplication.executor": "Run",
     "Maven.authentication-service [clean].executor": "Run",
     "Maven.authentication-service [install].executor": "Run",
@@ -58,7 +57,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Admin/Desktop/deployment/backend"
+    "last_opened_file_path": "C:/Users/Admin/Desktop/deployment/backend-weather-app-deployment",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
   }
 }]]></component>
   <component name="RunManager" selected="Application.WhishlistServiceApplication">
@@ -88,6 +88,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ConfigServerApplication" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="envFilePaths">
+        <option value="$PROJECT_DIR$/config-server/.env" />
+      </option>
+      <option name="MAIN_CLASS_NAME" value="com.weatherapp.config_server.ConfigServerApplication" />
+      <module name="config-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.weatherapp.config_server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserProfileApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.weatherapp.user_profile.UserProfileApplication" />
       <module name="user-profile" />
@@ -102,9 +118,6 @@
       </method>
     </configuration>
     <configuration name="WeatherServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="envFilePaths">
-        <option value="$PROJECT_DIR$/weather-service/.env" />
-      </option>
       <option name="MAIN_CLASS_NAME" value="com.weatherapp.weather_service.WeatherServiceApplication" />
       <module name="weather-service" />
       <extension name="coverage">
