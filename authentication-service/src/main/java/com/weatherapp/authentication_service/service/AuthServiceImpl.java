@@ -19,6 +19,9 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
+import java.util.UUID;
+import java.util.concurrent.*;
+
 @Service
 public class AuthServiceImpl implements AuthService{
 
@@ -28,36 +31,48 @@ public class AuthServiceImpl implements AuthService{
     private AuthenticationManager authenticationManager;
 
     @Autowired
-    private KafkaTemplate<String,Object> kafkaTemplate;
+    private KafkaTemplate<String, KafkaAuthRequest> kafkaTemplate;
 
-    private KafkaAuthResponse kafkaResponse;
+    private final ConcurrentHashMap<String, CompletableFuture<KafkaAuthResponse>>
+            pendingRequests = new ConcurrentHashMap<>();
 
     @Override
     public AuthResponse authenticateUser(LoginRequest loginRequest) {
+        String requestId = UUID.randomUUID().toString();
         KafkaAuthRequest request = new KafkaAuthRequest(loginRequest.getEmail(),
-                loginRequest.getPassword());
-        kafkaTemplate.send("auth-validation-request",request);
-        try{
-            Thread.sleep(5000);
-        }catch (InterruptedException e){
-            throw new IllegalStateException("Timeout, Please Try again");
-        }
-        if(kafkaResponse==null){
-            throw new UsernameNotFoundException("User doen't exist, Register");
-        }
-        if(!kafkaResponse.isAuthenticated()){
-            throw new BadCredentialsException("Invalid Credentials");
-        }
-        setSecurityContext(loginRequest.getEmail());
-        ResponseCookie cookie = jwtUtils.generateJwtCookie(loginRequest.getEmail());
+                loginRequest.getPassword(), requestId);
 
-        return new AuthResponse(true,"Login Successful",cookie);
+        CompletableFuture<KafkaAuthResponse> future = new CompletableFuture<>();
+        pendingRequests.put(requestId, future);
 
+        kafkaTemplate.send("auth-validation-request", request);
+
+        try {
+            KafkaAuthResponse response = future.get(5, TimeUnit.SECONDS);
+
+            if (!response.isAuthenticated()) {
+                if ("User Not Found".equals(response.getMessage())) {
+                    throw new UsernameNotFoundException("User does not exist. Please register.");
+                }
+                throw new BadCredentialsException("Invalid Credentials");
+            }
+
+            ResponseCookie cookie = jwtUtils.generateJwtCookie(loginRequest.getEmail());
+            return new AuthResponse(true,"Login Successful",cookie);
+
+        } catch (InterruptedException | ExecutionException | TimeoutException e) {
+            throw new IllegalStateException("Authentication timed out");
+        } finally {
+            pendingRequests.remove(requestId);
+        }
     }
 
-    @KafkaListener(topics = "auth-validation-response",groupId = "auth-service-group")
-    public void consumeAuthResponse(KafkaAuthResponse response){
-        this.kafkaResponse=response;
+    @KafkaListener(topics = "auth-validation-response", groupId = "auth-service-group")
+    public void consumeAuthResponse(KafkaAuthResponse response) {
+        CompletableFuture<KafkaAuthResponse> future = pendingRequests.remove(response.getRequestId());
+        if (future != null) {
+            future.complete(response);
+        }
     }
 
     @Override
