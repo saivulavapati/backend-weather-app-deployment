@@ -12,6 +12,15 @@
         <module name="weather-service" />
         <module name="service-registry" />
       </profile>
+      <profile name="Annotation profile for authentication-service" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath>
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
+        </processorPath>
+        <module name="authentication-service" />
+      </profile>
       <profile name="Annotation profile for whishlist-service" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -21,7 +30,6 @@
         </processorPath>
         <module name="user-profile" />
         <module name="whishlist-service" />
-        <module name="authentication-service" />
       </profile>
     </annotationProcessing>
   </component>
