@@ -11,11 +11,14 @@ import java.util.Set;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
+@Table(name = "wishlist",
+        uniqueConstraints = @UniqueConstraint(columnNames = "email"))
 public class Wishlist {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
     private String email;
 
     @OneToMany(mappedBy = "wishlist",cascade = CascadeType.ALL,orphanRemoval = true)
