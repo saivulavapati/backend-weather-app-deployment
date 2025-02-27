@@ -6,7 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="fb65f517-52d7-4c24-b9cb-9aab631bd574" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/dto/KafkaAuthRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/dto/KafkaAuthRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/dto/KafkaAuthResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/dto/KafkaAuthResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/service/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/service/AuthServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-profile/src/main/java/com/weatherapp/user_profile/dto/KafkaAuthRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-profile/src/main/java/com/weatherapp/user_profile/dto/KafkaAuthRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-profile/src/main/java/com/weatherapp/user_profile/dto/KafkaAuthResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-profile/src/main/java/com/weatherapp/user_profile/dto/KafkaAuthResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-profile/src/main/java/com/weatherapp/user_profile/service/KafkaConsumerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-profile/src/main/java/com/weatherapp/user_profile/service/KafkaUserProfileService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +63,7 @@
     "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.UserProfileApplication">
+  <component name="RunManager" selected="Application.WhishlistServiceApplication">
     <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.weatherapp.api_gateway.ApiGatewayApplication" />
       <module name="api-gateway" />
@@ -142,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.UserProfileApplication" />
         <item itemvalue="Application.AuthenticationServiceApplication" />
-        <item itemvalue="Application.ApiGatewayApplication" />
         <item itemvalue="Application.WhishlistServiceApplication" />
         <item itemvalue="Application.WeatherServiceApplication" />
+        <item itemvalue="Application.UserProfileApplication" />
+        <item itemvalue="Application.ApiGatewayApplication" />
       </list>
     </recent_temporary>
   </component>
