@@ -5,35 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb65f517-52d7-4c24-b9cb-9aab631bd574" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authentication-service/src/test/java/com/weatherapp/authentication_service/controller/AuthControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-profile/src/main/java/com/weatherapp/user_profile/configuration/OpenApiConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-profile/src/main/java/com/weatherapp/user_profile/configuration/UserProfileConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-profile/src/test/java/com/weatherapp/user_profile/service/KafkaUserProfileServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-service/src/main/java/com/weatherapp/weather_service/configuration/OpenApiConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-service/src/test/java/com/weatherapp/weather_service/service/WeatherServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/whishlist-service/src/main/java/com/weatherapp/whishlist_service/configuration/OpenApiConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/jwt/AuthTokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/jwt/AuthTokenFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/service/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/service/AuthServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/service/CustomUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/jwt/CustomUserDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/service/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/service/CustomUserDetailsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication-service/src/test/java/com/weatherapp/authentication_service/AuthenticationServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/test/java/com/weatherapp/authentication_service/AuthenticationServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-profile/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-profile/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-profile/src/main/java/com/weatherapp/user_profile/UserProfileApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-profile/src/main/java/com/weatherapp/user_profile/UserProfileApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-profile/src/test/java/com/weatherapp/user_profile/UserProfileApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-profile/src/test/java/com/weatherapp/user_profile/UserProfileApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-profile/src/test/java/com/weatherapp/user_profile/controller/UserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-profile/src/test/java/com/weatherapp/user_profile/controller/UserControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-profile/src/test/java/com/weatherapp/user_profile/service/UserServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-profile/src/test/java/com/weatherapp/user_profile/service/UserServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/weather-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-service/src/test/java/com/weatherapp/weather_service/WeatherServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/weather-service/src/test/java/com/weatherapp/weather_service/WeatherServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whishlist-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/whishlist-service/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whishlist-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/whishlist-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whishlist-service/src/main/java/com/weatherapp/whishlist_service/entity/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/whishlist-service/src/main/java/com/weatherapp/whishlist_service/entity/City.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whishlist-service/src/test/java/com/weatherapp/whishlist_service/WhishlistServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/whishlist-service/src/test/java/com/weatherapp/whishlist_service/WhishlistServiceApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +82,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Admin/Desktop/deployment/backend-weather-app-deployment",
+    "last_opened_file_path": "C:/Users/Admin/Desktop/dockers_backend",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
