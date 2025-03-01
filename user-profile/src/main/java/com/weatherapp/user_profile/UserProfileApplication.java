@@ -14,14 +14,4 @@ public class UserProfileApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(UserProfileApplication.class, args);
 	}
-
-	@Bean
-	public BCryptPasswordEncoder passwordEncoder(){
-		return new BCryptPasswordEncoder();
-    }
-
-	@Bean
-	public ModelMapper modelMapper(){
-		return new ModelMapper();
-	}
 }

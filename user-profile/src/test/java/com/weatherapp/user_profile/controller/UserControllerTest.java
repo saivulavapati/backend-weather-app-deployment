@@ -27,28 +27,28 @@ class UserControllerTest {
     @Test
     void register_ShouldReturnUserDto() {
         UserDto userDto = new UserDto();
-        userDto.setEmail("test@example.com");
-        userDto.setPassword("password123");
+        userDto.setEmail("sai@gmail.com");
+        userDto.setPassword("sai@123");
 
         when(userService.register(any(UserDto.class))).thenReturn(userDto);
 
         ResponseEntity<UserDto> response = userController.register(userDto);
 
         assertNotNull(response.getBody());
-        assertEquals("test@example.com", response.getBody().getEmail());
+        assertEquals("sai@gmail.com", response.getBody().getEmail());
         verify(userService, times(1)).register(any(UserDto.class));
     }
 
     @Test
     void getUserByEmail_ShouldReturnUser() {
         User user = new User();
-        user.setEmail("test@example.com");
+        user.setEmail("sai@gmail.com");
 
-        when(userService.getUserByEmail("test@example.com")).thenReturn(Optional.of(user));
+        when(userService.getUserByEmail("sai@gmail.com")).thenReturn(Optional.of(user));
 
-        ResponseEntity<Optional<User>> response = userController.getUserByEmail("test@example.com");
+        ResponseEntity<Optional<User>> response = userController.getUserByEmail("sai@gmail.com");
 
         assertTrue(response.getBody().isPresent());
-        assertEquals("test@example.com", response.getBody().get().getEmail());
+        assertEquals("sai@gmail.com", response.getBody().get().getEmail());
     }
 }

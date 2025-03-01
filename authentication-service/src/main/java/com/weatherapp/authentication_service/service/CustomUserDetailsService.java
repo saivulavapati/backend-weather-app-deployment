@@ -2,6 +2,7 @@ package com.weatherapp.authentication_service.service;
 
 import com.weatherapp.authentication_service.client.UserProfileClient;
 import com.weatherapp.authentication_service.dto.UserDto;
+import com.weatherapp.authentication_service.jwt.CustomUserDetails;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.userdetails.UserDetails;

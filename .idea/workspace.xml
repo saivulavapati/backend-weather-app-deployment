@@ -5,22 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb65f517-52d7-4c24-b9cb-9aab631bd574" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/weather-service/src/test/java/com/weatherapp/weather_service/controller/WeatherControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/whishlist-service/src/test/java/com/weatherapp/whishlist_service/controller/WishlistControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/whishlist-service/src/test/java/com/weatherapp/whishlist_service/service/WishlistServiceImpTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication-service/src/test/java/com/weatherapp/authentication_service/controller/AuthControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-profile/src/main/java/com/weatherapp/user_profile/configuration/OpenApiConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-profile/src/main/java/com/weatherapp/user_profile/configuration/UserProfileConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-profile/src/test/java/com/weatherapp/user_profile/service/KafkaUserProfileServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather-service/src/main/java/com/weatherapp/weather_service/configuration/OpenApiConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather-service/src/test/java/com/weatherapp/weather_service/service/WeatherServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whishlist-service/src/main/java/com/weatherapp/whishlist_service/configuration/OpenApiConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/authentication-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/configuration/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/configuration/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-registry/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-registry/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-registry/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service-registry/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/jwt/AuthTokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/jwt/AuthTokenFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/service/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/service/AuthServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/service/CustomUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/jwt/CustomUserDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/service/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/service/CustomUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/src/test/java/com/weatherapp/authentication_service/AuthenticationServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/test/java/com/weatherapp/authentication_service/AuthenticationServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-profile/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-profile/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-profile/src/main/java/com/weatherapp/user_profile/UserProfileApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-profile/src/main/java/com/weatherapp/user_profile/UserProfileApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-profile/src/test/java/com/weatherapp/user_profile/UserProfileApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-profile/src/test/java/com/weatherapp/user_profile/UserProfileApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-profile/src/test/java/com/weatherapp/user_profile/controller/UserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-profile/src/test/java/com/weatherapp/user_profile/controller/UserControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-profile/src/test/java/com/weatherapp/user_profile/service/UserServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-profile/src/test/java/com/weatherapp/user_profile/service/UserServiceImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weather-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/weather-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-service/src/main/java/com/weatherapp/weather_service/dto/WeatherResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/weather-service/src/main/java/com/weatherapp/weather_service/dto/WeatherResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-service/src/test/java/com/weatherapp/weather_service/WeatherServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/weather-service/src/test/java/com/weatherapp/weather_service/WeatherServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whishlist-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/whishlist-service/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/whishlist-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/whishlist-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whishlist-service/src/main/java/com/weatherapp/whishlist_service/entity/Wishlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/whishlist-service/src/main/java/com/weatherapp/whishlist_service/entity/Wishlist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whishlist-service/src/main/java/com/weatherapp/whishlist_service/entity/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/whishlist-service/src/main/java/com/weatherapp/whishlist_service/entity/City.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whishlist-service/src/test/java/com/weatherapp/whishlist_service/WhishlistServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/whishlist-service/src/test/java/com/weatherapp/whishlist_service/WhishlistServiceApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +43,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -59,21 +72,38 @@
     "Application.UserProfileApplication.executor": "Run",
     "Application.WeatherServiceApplication.executor": "Run",
     "Application.WhishlistServiceApplication.executor": "Run",
+    "JUnit.All in whishlist-service.executor": "Run",
+    "JUnit.AuthControllerTest.executor": "Run",
+    "JUnit.AuthServiceImplTest.authenticateUser_success.executor": "Run",
+    "JUnit.AuthServiceImplTest.executor": "Run",
+    "JUnit.AuthServiceImplTest.testAuthenticateUser_Success.executor": "Debug",
+    "JUnit.AuthServiceImplTest.testAuthenticateUser_SuccessfulLogin.executor": "Run",
+    "JUnit.KafkaUserProfileServiceTest.executor": "Run",
+    "JUnit.UserProfileApplicationTests.executor": "Run",
     "JUnit.WeatherControllerTest.executor": "Run",
+    "JUnit.WeatherServiceApplicationTests.executor": "Run",
     "JUnit.WeatherServiceImplTest.executor": "Run",
     "JUnit.WeatherServiceImplTest.testGetCityWeatherDetails_ApiFailure_ShouldThrowException.executor": "Run",
     "JUnit.WeatherServiceImplTest.testGetCityWeatherDetails_ExternalServiceFailure_ShouldThrowFeignException.executor": "Run",
     "JUnit.WeatherServiceImplTest.testGetCityWeatherDetails_Success.executor": "Run",
     "JUnit.WeatherServiceImplTest.testGetHourlyForecast_Success.executor": "Run",
+    "JUnit.WhishlistServiceApplicationTests.executor": "Run",
     "JUnit.WishlistControllerTest.executor": "Run",
     "JUnit.WishlistServiceImpTest.executor": "Run",
     "JUnit.WishlistServiceImpTest.testAddCityToWishlist_NewWishlist.executor": "Run",
     "Maven.authentication-service [clean].executor": "Run",
     "Maven.authentication-service [install].executor": "Run",
+    "Maven.authentication-service [test].executor": "Run",
     "Maven.user-profile [clean].executor": "Run",
     "Maven.user-profile [install].executor": "Run",
+    "Maven.user-profile [test].executor": "Run",
+    "Maven.user-profile [validate].executor": "Run",
+    "Maven.weather-service [test].executor": "Run",
     "Maven.whishlist-service [clean].executor": "Run",
     "Maven.whishlist-service [install].executor": "Run",
+    "Maven.whishlist-service [test].executor": "Run",
+    "Maven.whishlist-service [validate].executor": "Run",
+    "Maven.whishlist-service [verify].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -81,6 +111,9 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Admin/Desktop/deployment/backend-weather-app-deployment",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
   }
 }]]></component>
@@ -90,12 +123,13 @@
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.weatherapp.weather_service.service" />
+      <recent name="com.weatherapp.authentication_service.service" />
+      <recent name="com.weatherapp.authentication_service.controller" />
+      <recent name="com.weatherapp.user_profile.service" />
       <recent name="com.weatherapp.weather_service.controller" />
-      <recent name="com.weatherapp.whishlist_service.controller" />
-      <recent name="com.weatherapp.whishlist_service.service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.WeatherServiceImplTest.testGetHourlyForecast_Success">
+  <component name="RunManager" selected="JUnit.UserProfileApplicationTests">
     <configuration name="ConfigServerApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="envFilePaths">
         <option value="$PROJECT_DIR$/config-server/.env" />
@@ -112,6 +146,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserProfileApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="user-profile" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.weatherapp.user_profile.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.weatherapp.user_profile" />
+      <option name="MAIN_CLASS_NAME" value="com.weatherapp.user_profile.UserProfileApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WeatherControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="weather-service" />
       <extension name="coverage">
@@ -122,6 +171,21 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.weatherapp.weather_service.controller" />
       <option name="MAIN_CLASS_NAME" value="com.weatherapp.weather_service.controller.WeatherControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WeatherServiceApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="weather-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.weatherapp.weather_service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.weatherapp.weather_service" />
+      <option name="MAIN_CLASS_NAME" value="com.weatherapp.weather_service.WeatherServiceApplicationTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -142,61 +206,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WeatherServiceImplTest.testGetCityWeatherDetails_ApiFailure_ShouldThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="weather-service" />
+    <configuration name="WishlistControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="whishlist-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.weatherapp.weather_service.service.*" />
+          <option name="PATTERN" value="com.weatherapp.whishlist_service.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.weatherapp.weather_service.service" />
-      <option name="MAIN_CLASS_NAME" value="com.weatherapp.weather_service.service.WeatherServiceImplTest" />
-      <option name="METHOD_NAME" value="testGetCityWeatherDetails_ApiFailure_ShouldThrowException" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WeatherServiceImplTest.testGetCityWeatherDetails_Success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="weather-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.weatherapp.weather_service.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.weatherapp.weather_service.service" />
-      <option name="MAIN_CLASS_NAME" value="com.weatherapp.weather_service.service.WeatherServiceImplTest" />
-      <option name="METHOD_NAME" value="testGetCityWeatherDetails_Success" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WeatherServiceImplTest.testGetHourlyForecast_Success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="weather-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.weatherapp.weather_service.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.weatherapp.weather_service.service" />
-      <option name="MAIN_CLASS_NAME" value="com.weatherapp.weather_service.service.WeatherServiceImplTest" />
-      <option name="METHOD_NAME" value="testGetHourlyForecast_Success" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.weatherapp.whishlist_service.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.weatherapp.whishlist_service.controller.WishlistControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.WeatherServiceImplTest.testGetHourlyForecast_Success" />
-        <item itemvalue="JUnit.WeatherServiceImplTest.testGetCityWeatherDetails_Success" />
-        <item itemvalue="JUnit.WeatherServiceImplTest.testGetCityWeatherDetails_ApiFailure_ShouldThrowException" />
-        <item itemvalue="JUnit.WeatherServiceImplTest" />
+        <item itemvalue="JUnit.UserProfileApplicationTests" />
         <item itemvalue="JUnit.WeatherControllerTest" />
+        <item itemvalue="JUnit.WeatherServiceImplTest" />
+        <item itemvalue="JUnit.WeatherServiceApplicationTests" />
+        <item itemvalue="JUnit.WishlistControllerTest" />
       </list>
     </recent_temporary>
   </component>

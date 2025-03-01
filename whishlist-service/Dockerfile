@@ -8,7 +8,6 @@ WORKDIR /app
 COPY --from=build /app/target/*.jar wishlist-service.jar
 EXPOSE 8083
 
-# ENV CONFIG_SERVER_URL=http://localhost:8181
 ENV EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://service-registry:8761/eureka/
 
 ENTRYPOINT ["java", "-jar", "wishlist-service.jar"]

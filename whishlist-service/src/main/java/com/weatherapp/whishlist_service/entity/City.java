@@ -29,7 +29,7 @@ public class City {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         City city = (City) o;
-        return city != null && city.equals(city.cityName);
+        return cityName != null ? cityName.equalsIgnoreCase(city.cityName) : city.cityName == null;
     }
 
     @Override

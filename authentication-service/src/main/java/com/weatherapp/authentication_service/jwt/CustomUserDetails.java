@@ -1,4 +1,4 @@
-package com.weatherapp.authentication_service.service;
+package com.weatherapp.authentication_service.jwt;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

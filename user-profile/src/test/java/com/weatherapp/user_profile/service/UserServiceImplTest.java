@@ -14,6 +14,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.modelmapper.ModelMapper;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
+import java.time.LocalDate;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -42,9 +43,12 @@ class UserServiceImplTest {
         userDto = new UserDto();
         userDto.setEmail("test@example.com");
         userDto.setPassword("password123");
+        userDto.setDateOfBirth(LocalDate.of(2000,9,2000));
+        userDto.setFirstName("sai");
+        userDto.setLastName("vulavapati");
 
         user = new User();
-        user.setEmail("test@example.com");
+        user.setEmail("sai@gmail.com");
         user.setPassword("encryptedPassword");
     }
 

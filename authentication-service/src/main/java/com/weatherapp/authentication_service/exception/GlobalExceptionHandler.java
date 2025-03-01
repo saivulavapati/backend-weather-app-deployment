@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.TimeoutException;
 
 @RestControllerAdvice
 public class GlobalExceptionHandler {
@@ -26,6 +27,14 @@ public class GlobalExceptionHandler {
     public ResponseEntity<Map<String, Object>> handleBadCredentialsException(BadCredentialsException ex) {
         Map<String, Object> response = new HashMap<>();
         response.put("message", "Invalid email or password.");
+        response.put("status", false);
+        return new ResponseEntity<>(response, HttpStatus.UNAUTHORIZED);
+    }
+
+    @ExceptionHandler(TimeoutException.class)
+    public ResponseEntity<Map<String, Object>> handleTimeoutException(TimeoutException ex) {
+        Map<String, Object> response = new HashMap<>();
+        response.put("message", "TimeOut.Please Try again.");
         response.put("status", false);
         return new ResponseEntity<>(response, HttpStatus.UNAUTHORIZED);
     }

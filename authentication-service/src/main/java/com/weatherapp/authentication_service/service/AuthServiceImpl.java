@@ -48,7 +48,7 @@ public class AuthServiceImpl implements AuthService{
         kafkaTemplate.send("auth-validation-request", request);
 
         try {
-            KafkaAuthResponse response = future.get(5, TimeUnit.SECONDS);
+            KafkaAuthResponse response = future.get(15, TimeUnit.SECONDS);
 
             if (!response.isAuthenticated()) {
                 if ("User Not Found".equals(response.getMessage())) {
@@ -95,5 +95,14 @@ public class AuthServiceImpl implements AuthService{
 
         Authentication authentication = new UsernamePasswordAuthenticationToken(userDetails, null, userDetails.getAuthorities());
         SecurityContextHolder.getContext().setAuthentication(authentication);
+    }
+
+
+    public CompletableFuture<KafkaAuthResponse> getPendingRequest(String requestId) {
+        return pendingRequests.get(requestId);
+    }
+
+    public void addPendingRequest(String requestId, CompletableFuture<KafkaAuthResponse> future) {
+        pendingRequests.put(requestId, future);
     }
 }
