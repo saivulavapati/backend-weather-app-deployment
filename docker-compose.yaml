@@ -1,0 +1,135 @@
+version: "3.6"
+
+services:
+
+  service-registry:
+    image: service-registry
+    mem_limit: 700m
+    ports:
+      - "8761:8761"
+    networks:
+      - weather-network
+    restart: on-failure
+
+  api-gateway:
+    image: api-gateway
+    mem_limit: 700m
+    ports:
+      - "9000:9000"
+    networks:
+      - weather-network
+    depends_on:
+      - service-registry
+    environment:
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: "http://service-registry:8761/eureka/"
+    restart: on-failure
+
+  weather-service:
+    image: weather-service
+    mem_limit: 700m
+    ports:
+      - "8080:8080"
+    networks:
+      - weather-network
+    depends_on:
+      - service-registry
+      - api-gateway
+    environment:
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: "http://service-registry:8761/eureka/"
+    restart: on-failure
+
+  whishlist-service:
+    image: whishlist-service
+    mem_limit: 700m
+    ports:
+      - "8083:8083"
+    networks:
+      - weather-network
+    depends_on:
+      - service-registry
+      - api-gateway
+    environment:
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: "http://service-registry:8761/eureka/"
+      SPRING_DATASOURCE_URL: jdbc:mysql://weather-app-db.c5806w8m20s8.ap-south-1.rds.amazonaws.com:3306/whishlistdb
+      SPRING_DATASOURCE_USERNAME: admin
+      SPRING_DATASOURCE_PASSWORD: 8500552494 
+    restart: on-failure
+
+  userprofile-service:
+    image: userprofile-service
+    mem_limit: 700m
+    ports:
+      - "8081:8081"
+    networks:
+      - weather-network
+    depends_on:
+      - service-registry
+      - api-gateway
+      - kafka
+    environment:
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: "http://service-registry:8761/eureka/"
+      SPRING_DATASOURCE_URL: jdbc:mysql://weather-app-db.c5806w8m20s8.ap-south-1.rds.amazonaws.com:3306/usersdb
+      SPRING_DATASOURCE_USERNAME: admin
+      SPRING_DATASOURCE_PASSWORD: 8500552494
+      KAFKA_BOOTSTRAP_SERVERS: kafka:9093
+    restart: on-failure
+
+  authentication-service:
+    image: authentication-service
+    mem_limit: 700m
+    ports:
+      - "8082:8082"
+    networks:
+      - weather-network
+    depends_on:
+      - service-registry
+      - api-gateway
+      - kafka
+    environment:
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: "http://service-registry:8761/eureka/"
+      KAFKA_BOOTSTRAP_SERVERS: kafka:9093
+    restart: on-failure
+
+
+  zookeeper:
+    image: confluentinc/cp-zookeeper:latest
+    container_name: zookeeper
+    ports:
+       - "2181:2181"
+    restart: on-failure
+    environment:
+        ZOOKEEPER_CLIENT_PORT: 2181
+        ZOOKEEPER_TICK_TIME: 2000
+    networks:
+      - weather-network
+
+  kafka:
+    image: wurstmeister/kafka:2.12-2.1.1
+    container_name: kafka
+    ports:
+       - "9092:9092"
+    expose:
+      - "9092"
+    restart: on-failure
+    environment:
+      KAFKA_ADVERTISED_LISTENERS: INSIDE://kafka:9093,OUTSIDE://localhost:9092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: INSIDE:PLAINTEXT,OUTSIDE:PLAINTEXT
+      KAFKA_LISTENERS: INSIDE://:9093,OUTSIDE://:9092
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_INTER_BROKER_LISTENER_NAME: INSIDE
+    volumes:
+        - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+        - weather-network
+    depends_on:
+      - zookeeper
+    healthcheck:
+      test: [ "CMD", "kafka-broker-api-versions", "--bootstrap-server", "localhost:9092" ]
+      interval: 10s
+      retries: 5
+      start_period: 30s
+
+
+networks:
+  weather-network:
+  

@@ -1,0 +1,56 @@
+server:
+  port:8080
+
+spring:
+  application:
+    name: weather-service
+
+openweather:
+  api:
+    key: ${WEATHER_API_KEY}
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_CLIENT_SERVICEURL_DEFAULTZONE:http://localhost:8761/eureka/}
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true
+
+resilience4j:
+  circuitbreaker:
+    instances:
+      weather-Service:
+        failureRateThreshold: 50  # Open circuit if 50% of calls fail
+        slowCallRateThreshold: 50  # Open circuit if 50% of calls are slow
+        slowCallDurationThreshold: 2000ms  # Calls taking more than 2s are considered slow
+        permittedNumberOfCallsInHalfOpenState: 2  # Allowed calls when circuit is half-open
+        slidingWindowSize: 10  # Number of calls to consider for failure rate
+        minimumNumberOfCalls: 5  # Minimum calls before opening the circuit
+        waitDurationInOpenState: 10s  # How long circuit stays open before moving to half-open
+        automaticTransitionFromOpenToHalfOpenEnabled: true  # Automatically transition to half-open
+        recordExceptions:
+          - feign.RetryableException
+          - feign.FeignException
+          - org.springframework.web.client.HttpServerErrorException
+          - java.net.SocketTimeoutException
+          - java.net.UnknownHostException
+        ignoreExceptions:
+          - com.weatherapp.weather_service.exception.BadRequestException
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: circuitbreakers, health, metrics
+  endpoint:
+    circuitbreakers:
+      enabled: true
+
+
+
+
+
+
+

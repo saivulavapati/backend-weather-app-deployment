@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4b07a50f-0f06-4543-bf42-402d5964b834" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/weatherapp/api_gateway/ApiGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/weatherapp/api_gateway/ApiGatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/weatherapp/api_gateway/configuration/GatewayConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/weatherapp/api_gateway/configuration/GatewayConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/weatherapp/api_gateway/filter/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/weatherapp/api_gateway/filter/JwtAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/test/java/com/weatherapp/api_gateway/ApiGatewayApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/test/java/com/weatherapp/api_gateway/ApiGatewayApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/AuthenticationServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/AuthenticationServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/client/UserProfileClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/client/UserProfileClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/configuration/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/configuration/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/dto/KafkaAuthRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/dto/KafkaAuthRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/dto/KafkaAuthResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/dto/KafkaAuthResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/jwt/AuthEntryPointJwt.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/jwt/AuthEntryPointJwt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/jwt/AuthTokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/jwt/AuthTokenFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/service/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/service/AuthServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/service/CustomUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/jwt/CustomUserDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/service/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/java/com/weatherapp/authentication_service/service/CustomUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication-service/src/test/java/com/weatherapp/authentication_service/AuthenticationServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication-service/src/test/java/com/weatherapp/authentication_service/AuthenticationServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/java/com/weatherapp/config_server/ConfigServerApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/test/java/com/weatherapp/config_server/ConfigServerApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-registry/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/service-registry/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-registry/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/service-registry/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-registry/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service-registry/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-registry/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/service-registry/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-registry/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/service-registry/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-registry/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-registry/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-registry/src/main/java/com/weatherapp/service_registry/ServiceRegistryApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-registry/src/main/java/com/weatherapp/service_registry/ServiceRegistryApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-registry/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service-registry/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-registry/src/test/java/com/weatherapp/service_registry/ServiceRegistryApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-registry/src/test/java/com/weatherapp/service_registry/ServiceRegistryApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-profile/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/user-profile/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-profile/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/user-profile/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-profile/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-profile/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-profile/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/user-profile/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-profile/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/user-profile/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-profile/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-profile/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-profile/src/main/java/com/weatherapp/user_profile/UserProfileApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-profile/src/main/java/com/weatherapp/user_profile/UserProfileApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-profile/src/main/java/com/weatherapp/user_profile/dto/KafkaAuthRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-profile/src/main/java/com/weatherapp/user_profile/dto/KafkaAuthRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-profile/src/main/java/com/weatherapp/user_profile/dto/KafkaAuthResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-profile/src/main/java/com/weatherapp/user_profile/dto/KafkaAuthResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-profile/src/main/java/com/weatherapp/user_profile/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-profile/src/main/java/com/weatherapp/user_profile/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-profile/src/main/java/com/weatherapp/user_profile/service/KafkaConsumerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-profile/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-profile/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-profile/src/test/java/com/weatherapp/user_profile/UserProfileApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-profile/src/test/java/com/weatherapp/user_profile/UserProfileApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-profile/src/test/java/com/weatherapp/user_profile/controller/UserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-profile/src/test/java/com/weatherapp/user_profile/controller/UserControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-profile/src/test/java/com/weatherapp/user_profile/service/UserServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-profile/src/test/java/com/weatherapp/user_profile/service/UserServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-service/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-service/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/weather-service/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-service/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/weather-service/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/weather-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/weather-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-service/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/weather-service/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/weather-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-service/src/main/java/com/weatherapp/weather_service/WeatherServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/weather-service/src/main/java/com/weatherapp/weather_service/WeatherServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-service/src/main/java/com/weatherapp/weather_service/dto/WeatherResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/weather-service/src/main/java/com/weatherapp/weather_service/dto/WeatherResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/weather-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-service/src/test/java/com/weatherapp/weather_service/WeatherServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/weather-service/src/test/java/com/weatherapp/weather_service/WeatherServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whishlist-service/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/whishlist-service/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whishlist-service/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/whishlist-service/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whishlist-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/whishlist-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whishlist-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/whishlist-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whishlist-service/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/whishlist-service/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whishlist-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/whishlist-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whishlist-service/src/main/java/com/weatherapp/whishlist_service/WhishlistServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/whishlist-service/src/main/java/com/weatherapp/whishlist_service/WhishlistServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whishlist-service/src/main/java/com/weatherapp/whishlist_service/controller/WishlistController.java" beforeDir="false" afterPath="$PROJECT_DIR$/whishlist-service/src/main/java/com/weatherapp/whishlist_service/controller/WishlistController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whishlist-service/src/main/java/com/weatherapp/whishlist_service/entity/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/whishlist-service/src/main/java/com/weatherapp/whishlist_service/entity/City.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whishlist-service/src/main/java/com/weatherapp/whishlist_service/entity/Wishlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/whishlist-service/src/main/java/com/weatherapp/whishlist_service/entity/Wishlist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whishlist-service/src/main/java/com/weatherapp/whishlist_service/service/WishlistServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/whishlist-service/src/main/java/com/weatherapp/whishlist_service/service/WishlistServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whishlist-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/whishlist-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whishlist-service/src/test/java/com/weatherapp/whishlist_service/WhishlistServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/whishlist-service/src/test/java/com/weatherapp/whishlist_service/WhishlistServiceApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2ti81Se21xxaVUtaKqcbEIO86Nr" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ApiGatewayApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.AuthenticationServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ServiceRegistryApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.UserProfileApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.WeatherServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.WhishlistServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.authentication-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/Desktop/dockers_backend/authentication-service/src/main/java/com/weatherapp/authentication_service/service&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Desktop\dockers_backend\authentication-service\src\main\java\com\weatherapp\authentication_service\service" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.AuthenticationServiceApplication">
+    <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.weatherapp.api_gateway.ApiGatewayApplication" />
+      <module name="api-gateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.weatherapp.api_gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthenticationServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.weatherapp.authentication_service.AuthenticationServiceApplication" />
+      <module name="authentication-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.weatherapp.authentication_service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserProfileApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.weatherapp.user_profile.UserProfileApplication" />
+      <module name="user-profile" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.weatherapp.user_profile.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WeatherServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.weatherapp.weather_service.WeatherServiceApplication" />
+      <module name="weather-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.weatherapp.weather_service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WhishlistServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.weatherapp.whishlist_service.WhishlistServiceApplication" />
+      <module name="whishlist-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.weatherapp.whishlist_service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AuthenticationServiceApplication" />
+        <item itemvalue="Application.WhishlistServiceApplication" />
+        <item itemvalue="Application.UserProfileApplication" />
+        <item itemvalue="Application.WeatherServiceApplication" />
+        <item itemvalue="Application.ApiGatewayApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4b07a50f-0f06-4543-bf42-402d5964b834" name="Changes" comment="" />
+      <created>1740823321640</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1740823321640</updated>
+    </task>
+    <servers />
+  </component>
+</project>
